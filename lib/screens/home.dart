@@ -4,7 +4,7 @@ class Homepage extends StatelessWidget {
   int days = 30;
   String Name = "Namo";
 
-  @override
+  @override //state-less Widget
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
