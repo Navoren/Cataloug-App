@@ -8,7 +8,7 @@ class Homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Test Application"),
+        title: const Text("Test Application"),
       ),
       body: Center(
         child: Container(
