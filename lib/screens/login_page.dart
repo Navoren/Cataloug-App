@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:secondapp/utils/routes.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -8,7 +9,8 @@ class LoginPage extends StatelessWidget {
     return Material(
         color: Colors.white,
         textStyle: const TextStyle(color: Colors.blueAccent),
-        child: Column(
+        child: SingleChildScrollView(
+            child: Column(
           children: [
             Image.asset(
               "assets/images/undraw_Mobile_login_re_9ntv.png",
@@ -59,13 +61,15 @@ class LoginPage extends StatelessWidget {
                             elevation: 3,
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(30))),
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.pushNamed(context, MyRoutes.homeRoute);
+                        },
                         child: const Text("Login"),
                       ),
                     )
                   ],
                 ))
           ],
-        ));
+        )));
   }
 }
