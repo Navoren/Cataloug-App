@@ -21,8 +21,14 @@ class LoginPage extends StatelessWidget {
                 fontWeight: FontWeight.bold,
               ),
             ),
-            const SizedBox(
-              height: 20.0,
+            const Padding(
+              padding: EdgeInsets.all(20.0),
+              child: SizedBox(
+                child: Text(
+                  "Login to Continue",
+                  style: TextStyle(color: Colors.blueGrey),
+                ),
+              ),
             ),
             Padding(
                 padding: const EdgeInsets.symmetric(
@@ -47,7 +53,7 @@ class LoginPage extends StatelessWidget {
                     ),
                     SizedBox(
                       width: 100,
-                      height: 50,
+                      height: 45,
                       child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                             elevation: 3,
